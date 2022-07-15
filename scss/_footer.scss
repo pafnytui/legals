@@ -1,0 +1,143 @@
+footer {
+    background-color: $lightgrey;
+    font-family: "TT Norms";
+}
+
+.footer-separator {
+    border-top: 4px solid $separator;
+}
+
+.map-address {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0 20px;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-navbar-address {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        color: $purple;
+    }
+
+    .look-at-map {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        color: $blue;
+        text-transform: uppercase;
+    }
+
+    .look-at-map:before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: $gray;
+        border-radius: 120%;
+        vertical-align: baseline;
+        margin: 0px 10px 0 30px;
+    }
+}
+
+.footer-links {
+    display: flex;
+    padding: 0 0 40px;
+    align-items: center;
+    
+    @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+
+        .footer-navbar-phone:before {
+            display: none;
+        }
+
+        .footer-navbar-phone:after {
+            display: none;
+        }
+
+    }
+}
+
+.footer-navbar-phone {
+    text-decoration: none;
+    color: $purple;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    &:hover {
+        color: $purple;
+    }
+}
+
+.footer-navbar-phone:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: $gray;
+    border-radius: 120%;
+    vertical-align: baseline;
+    margin: 0px 5px 0px;
+}
+
+.footer-navbar-phone:after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: $gray;
+    border-radius: 120%;
+    vertical-align: baseline;
+    margin: 0px 10px 0px;
+}
+
+.e-mail {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: $blue;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.rights {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+
+    @media (max-width: 992px) {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .all-rights {
+        color: $gray;
+        padding: 32px 0 0;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+
+        @media (max-width: 992px) {
+            padding: 20px 0 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .map-address .look-at-map:before {
+        display: none;
+    }
+}
