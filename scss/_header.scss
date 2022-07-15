@@ -69,7 +69,11 @@
 
     &-brand {
         order: 1;
-        height: 63px;
+        
+
+        img {
+            height: 63px;
+        }
 
         @media (max-width: 992px) {
             order: 2;
@@ -99,7 +103,7 @@
 
     &-collapse {
         order: 3;
-        margin-top: -10px;
+        margin-top: -40px;
     }
 
     &-address, &-phone {
